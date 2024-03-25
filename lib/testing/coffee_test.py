@@ -35,8 +35,8 @@ class TestCoffee:
         assert coffee.name == "Mocha"
 
         # uncomment the next two lines if using Exceptions
-        # with pytest.raises(Exception):
-        #     coffee.name = "Peppermint Mocha"
+        with pytest.raises(Exception):
+            coffee.name = "Peppermint Mocha"
 
     def test_has_many_orders(self):
         """coffee has many orders"""
